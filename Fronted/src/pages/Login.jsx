@@ -23,7 +23,7 @@ export const Login = () => {
     };
     useEffect(() => {
         if (!error && user) {
-            navigate('/', {
+            navigate('/forum', {
                 state: {
                     username: user.username,
                     user_id: user.id
