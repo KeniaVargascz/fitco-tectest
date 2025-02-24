@@ -1,7 +1,6 @@
 const getPublications = require('../lambdas/get_publications'); 
 const { Publication, Reactions } = require('../models/models');
 
-// Mock de los modelos
 jest.mock('../models/models', () => {
     return {
         Publication: {
